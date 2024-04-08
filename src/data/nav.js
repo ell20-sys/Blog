@@ -2,7 +2,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const navData = [
     {
-        id: 1, name: 'Solutions', icon: IoIosArrowDown,
+        id: 1, name: 'Solutions', large:true, icon: IoIosArrowDown, description: "Complete set of features and tools to start, market and grow your e-commerce business",image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.categories/5b976fbe3c11d25dd02edc19/5d7b3c6dafa2f237111d8ddd-250x250.png",
         dropdown: [[
             { id: 1.10, title: "Multi Vendor", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/629dcabe9e928f18048a9dc8/multi-vendor.svg", description: "Build A Multi-Vendor Marketplace" },
             { id: 1.11, title: "Multi Store", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/629dcaef1c64ed175758ecf6/multi-store.svg", description: "Manage Multiple Sub Stores From Single Dashboard" },
