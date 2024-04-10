@@ -1,8 +1,17 @@
 import { IoIosArrowDown } from "react-icons/io";
 
+const hamburgerMenu = [
+    { id: 1, name: "Contact Sale" },
+    { id: 2, name: "Start Free Trial" },
+    { id: 3, name: "Schedule Demo" },
+    { id: 4, name: "Login to your store" },
+];
+
+
 const navData = [
     {
-        id: 1, name: 'Solutions', large:true, icon: IoIosArrowDown, description: "Complete set of features and tools to start, market and grow your e-commerce business",image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.categories/5b976fbe3c11d25dd02edc19/5d7b3c6dafa2f237111d8ddd-250x250.png",
+        id: 1, name: 'Solutions', large: true, icon: IoIosArrowDown, description: "Complete set of features and tools to start, market and grow your e-commerce business", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.categories/5b976fbe3c11d25dd02edc19/5d7b3c6dafa2f237111d8ddd-250x250.png",
+        btn: true,
         dropdown: [[
             { id: 1.10, title: "Multi Vendor", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/629dcabe9e928f18048a9dc8/multi-vendor.svg", description: "Build A Multi-Vendor Marketplace" },
             { id: 1.11, title: "Multi Store", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/629dcaef1c64ed175758ecf6/multi-store.svg", description: "Manage Multiple Sub Stores From Single Dashboard" },
@@ -31,8 +40,9 @@ const navData = [
 
     },
     {
-        id: 2, name: 'Develop', icon: IoIosArrowDown,
-        dropdown: [[],[
+        id: 2, name: 'Develop', icon: IoIosArrowDown, description: "Developer friendly yet easy to use tools", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.categories/5d652bd989362f53f8e9eb6d/5d7f475316ac837dcf6c083f-250x250.png",
+        btn: true,
+        dropdown: [[], [
             { id: 2.10, title: "API Reference", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03ce20572793f90c41189/api.svg", description: "Restful APIs To 100+ Endpoints" },
             { id: 2.11, title: "Widget Reference", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03cf4f805774000135499/widget-refrernce.svg", description: "Built-In Widgets To Build, Extend And Customise Your Storefront" },
             { id: 2.12, title: "Integrations", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03d0a9f46103f5c4c3bdd/integration.svg", description: "120+ Built In Integrations" },
@@ -44,17 +54,18 @@ const navData = [
     { id: 3, name: "Examples" },
     { id: 4, name: "Pricing", },
     {
-        id: 5, name: "Resources", icon: IoIosArrowDown,
+        id: 5, name: "Resources", icon: IoIosArrowDown, description: "All that you need know to begin your online store with StoreHippo", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.categories/5d6618fffc4f6210fe467fda/5d7f476a16ac837dcf6c0af0-250x250.png",
+        btn: false,
         dropdown: [[], [
-            {id: 5.1, title: "Themes", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03e48957d163f1fe4bb8d/themes.svg", description: "Beautiful Themes Optimized For Multiple Devices"},
-            {id: 5.2, title: "About Us", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03e6ef80577400013900e/about-us.svg", description: "Everything About StoreHippo’s Origin, Vision & Mission"},
-            {id: 5.3, title: "Contact Us", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03ea2f80577400013979d/contact-us.svg", description: "Get In Touch With StoreHippo Support"},
-            {id: 5.4, title: "Blog", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03eb40572793f90c45455/blog.svg", description: "E-Commerce Trends, Tips And Expert Guidance"},
-            {id: 5.5, title: "Whitepapers", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03ed4957d163f1fe4d106/whitepapers.svg", description: "Data-Driven Insights On Ecommerce Topics And Trends"},
-            {id: 5.6, title: "Forum", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03ef00572793f90c45b4b/forum.svg", description: "Exchange Experience & Views On StoreHippo"},
-            {id: 5.7, title: "Help Center", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03f32f80577400013a991/help-center.svg", description: "How To Guides To Use StoreHippo"},
+            { id: 5.1, title: "Themes", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03e48957d163f1fe4bb8d/themes.svg", description: "Beautiful Themes Optimized For Multiple Devices" },
+            { id: 5.2, title: "About Us", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03e6ef80577400013900e/about-us.svg", description: "Everything About StoreHippo’s Origin, Vision & Mission" },
+            { id: 5.3, title: "Contact Us", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03ea2f80577400013979d/contact-us.svg", description: "Get In Touch With StoreHippo Support" },
+            { id: 5.4, title: "Blog", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03eb40572793f90c45455/blog.svg", description: "E-Commerce Trends, Tips And Expert Guidance" },
+            { id: 5.5, title: "Whitepapers", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03ed4957d163f1fe4d106/whitepapers.svg", description: "Data-Driven Insights On Ecommerce Topics And Trends" },
+            { id: 5.6, title: "Forum", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03ef00572793f90c45b4b/forum.svg", description: "Exchange Experience & Views On StoreHippo" },
+            { id: 5.7, title: "Help Center", image: "https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/originals/62b03f32f80577400013a991/help-center.svg", description: "How To Guides To Use StoreHippo" },
         ]
         ]
     },
 ]
-export default navData;
+export {navData ,hamburgerMenu};
