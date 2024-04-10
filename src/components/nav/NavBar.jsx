@@ -15,7 +15,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex static justify-evenly border-b items-center">
+    <div className="flex justify-evenly border-b items-center">
       <div className="w-[170px] mt-1 flex justify-center mb-2">
         <img
           src="https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.settings/521c4d7548c284890e000001/594a155440e9fb9e592f2ba9-240x240.png"
