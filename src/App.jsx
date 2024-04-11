@@ -4,7 +4,9 @@ import Banner from "./components/banner/Banner";
 function App() {
   return (
     <>
+    <div className="fixed w-full z-[100]">
       <NavBar />
+    </div>
       <Hero />
       <Banner/>
     </>
